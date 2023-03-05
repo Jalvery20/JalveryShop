@@ -1,0 +1,58 @@
+.triangle-active {
+  float: left;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-left: 15px solid #ffd333;
+  border-bottom: 20px solid transparent;
+  margin-left: -1px;
+}
+
+.triangle2-active {
+  float: left;
+  width: 0;
+  border-top: 20px solid #ffd333;
+  border-left: 15px solid #f5f5f5;
+  border-bottom: 20px solid #ffd333;
+  margin-right: -1px;
+}
+
+.triangle-incomplete {
+  float: left;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-left: 15px solid #eeeeee;
+  border-bottom: 20px solid transparent;
+  margin-left: -1px;
+}
+
+.triangle2-incomplete {
+  float: left;
+  width: 0;
+  border-top: 20px solid #eeeeee;
+  border-left: 15px solid #f5f5f5;
+  border-bottom: 20px solid #eeeeee;
+  margin-right: -1px;
+}
+
+.step {
+  margin: 0;
+  border: 0;
+  letter-spacing: 1px;
+  line-height: 30px;
+  padding: 5px 10px 5px 15px;
+  color: grey;
+  text-decoration: none;
+  cursor: default;
+  font-weight: bold;
+  float: left;
+  height: auto;
+}
+
+.active-step {
+  background: #ffd333;
+  color: #808080;
+}
+
+.incomplete {
+  background: #eeeeee;
+}

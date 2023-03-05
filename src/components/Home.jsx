@@ -38,24 +38,7 @@ const Home = () => {
     window.scrollTo(0,0)
 }, [])
   
-  useEffect(()=>{
-      if(error){
-        setTimeout(()=>{
-          toast.error(error, {
-            position: "bottom-center",
-            autoClose: 5000,
-            bodyStyle:"background:black",
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            });
-          dispatch(clearErrors())
-        },100)
-      
-      
-    }  
+  useEffect(()=>{ 
     dispatch(getProducts(keyword,currentPage,price,category,rating,""))
 
   },[dispatch,error,keyword,currentPage,price,category,rating])
@@ -65,9 +48,9 @@ const Home = () => {
   return (
     <>
       {loading ? <Loader/>: (
+
         <>
           <MetaData title={"Buy best Products Online"} />
-          
               <Carousel />
               <Features />
               <Categories />

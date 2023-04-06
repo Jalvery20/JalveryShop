@@ -7,13 +7,15 @@ import {useNavigate} from "react-router-dom"
 import MetaData from "../layout/MetaData"
 import Loader from '../layout/Loader';
 
+import defaultUser from "../../../assets/img/default_user.png"
+
 
 const UpdateProfile = () => {
 
     const [name,setName]=useState("")
     const [email,setEmail]=useState("")
     const [avatar,setAvatar]=useState("")
-    const [avatarPreview,setAvatarPreview]=useState("/img/default_user.png")
+    const [avatarPreview,setAvatarPreview]=useState(defaultUser)
 
   const dispatch=useDispatch()
   const navigate=useNavigate()

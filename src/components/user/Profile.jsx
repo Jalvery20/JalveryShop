@@ -5,6 +5,8 @@ import {useSelector} from "react-redux"
 import MetaData from '../layout/MetaData'
 import Loader from '../layout/Loader'
 
+import defaultUser from "../../../assets/img/default_user.png"
+
 const Profile = () => {
     const { user , loading }=useSelector(state=>state.auth)
 
@@ -19,7 +21,7 @@ const Profile = () => {
                     <div className="row justify-content-around mt-5 user-info">
                         <div className="col-12 col-md-3">
                             <figure className='avatar text-center avatar-profile'>
-                                <img className=" img-fluid" src={user.avatar?user.avatar.url : "/img/default_user.png"} alt={user.name} />
+                                <img className=" img-fluid" src={user.avatar?user.avatar.url : defaultUser} alt={user.name} />
                             </figure>
                             <Link to="/me/update" id="edit_profile" className="btn btn-warning btn-block my-5  ">
                                 <span className='h5 text-uppercase text-dark px-2 ml-n1'>
